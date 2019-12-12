@@ -1,0 +1,8 @@
+CREATE TABLESPACE memoPJ
+DATAFILE '/bizworks/oracle/data/memoPJ.dbf'
+SIZE 10M AUTOEXTEND ON NEXT 10K;
+
+CREATE USER memo_user IDENTIFIED BY memoPJ
+DEFAULT TABLESPACE memoPJ;
+
+GRANT DBA TO memo_user;
